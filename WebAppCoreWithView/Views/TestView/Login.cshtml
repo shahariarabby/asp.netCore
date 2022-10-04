@@ -1,0 +1,18 @@
+﻿@{
+    //ViewData["Title"] = "Login";
+}
+@*@model WebAppCoreWithView.Models.User*@
+@model List<WebAppCoreWithView.Models.User>
+
+<h2>Index</h2>
+
+<p>Hello from our View Template login !</p>
+<table border="1" cellpadding="4">
+        @foreach (var row in Model)
+        {
+        <tr>
+            <td>@row.FirstName</td>
+            <td>@row.Email</td>
+        </tr>
+    }
+    </table>
